@@ -1,0 +1,24 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run db:migrate && npm run db:seed && node app.js",
+    "start:test": " NODE_ENV=test node app.js",
+    "start:prod": " NODE_ENV=prod node app.js",
+    "db:migrate": "node_modules/.bin/sequelize db:migrate",
+    "db:migrate:undo": "node_modules/.bin/sequelize db:migrate:undo",
+    "db:seed": "node_modules/.bin/sequelize db:seed:all",
+    "db:seed:undo": "node_modules/.bin/sequelize db:seed:undo:all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "sequelize": "^4.40.0",
+    "sequelize-cli": "^5.1.0",
+    "sqlite3": "^4.0.2"
+  }
+}

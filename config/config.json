@@ -1,0 +1,14 @@
+{
+  "development": {
+    "dialect": "sqlite",
+    "storage": "sqlite.dev"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": "sqlite.test"
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "sqlite.prod"
+  }
+}
